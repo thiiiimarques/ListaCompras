@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <img src="assets/icons/logo.svg" alt="">
+  </header>
+
+  <main>
+    <a href="#">
+      <img src="assets/icons/back.svg" alt="">
+    </a>
+
+    <h1>Compras da semana</h1>
+    
+    <div id="addItem">
+      <form>
+        <input type="text" placeholder="Adicione um novo item" required>
+        <button type="submit">Adicionar Item</button>
+      </form>
+    </div>
+
+    <div id="items">
+      <div class="item">
+        <input type="checkbox"> <span>Pão de Forma</span>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+  
+      <div class="item">
+        <input type="checkbox"> <span>Café Preto</span>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+  
+      <div class="item">
+        <input type="checkbox"> <span>Suco de Laranja</span>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+  
+      <div class="item">
+        <input type="checkbox"> <span>Bolacha</span>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+    </div>
+    
+
+    <div id="trashItem">
+      <img src="assets/icons/warning-circle-filled.svg" alt="">
+      <p>O item foi removido da lista</p>
+    </div>
+
+  </main>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
