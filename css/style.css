@@ -74,14 +74,14 @@ h1{
   background-color: var(--color-brand-hover);
 }
 
-#items {
+#ListItems {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 2rem 0;
 }
 
-.item{
+.item_container{
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -92,7 +92,7 @@ h1{
   border-radius: 1rem;
 }
 
-.item input {
+.item_container input {
   all: unset;
   border: 2px solid var(--border-primary);
   width: .7rem;
@@ -100,31 +100,43 @@ h1{
   display: inline-block;
 }
 
-.item img {
+.item_container img {
   margin-left: auto;
+  cursor: pointer;
 }
 
-.item input:checked{
+.item_container input:checked{
   background-color: var(--color-brand);
   width: .7rem;
   height: .7rem;
 }
 
-.item input:hover{
+.item_container input:checked + .nameItemCheck{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item_container input:hover{
   border: 2px solid var(--border-hover);
 }
 
-
-#trashItem {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+footer {
+  display: none;
   background-color: var(--color-danger);
   padding: 1rem;
   color: var(--always-white);
   border-radius: 1rem;
 }
 
+footer span{
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+
+footer img{
+  vertical-align: middle;
+}
+
 .showSucessTrash{
-  display: flex;
+  display: block;
 }
